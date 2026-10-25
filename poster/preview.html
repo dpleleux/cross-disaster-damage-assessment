@@ -1,0 +1,19 @@
+<script>
+// Fit the physical-size poster into Positron's viewer; printing stays 48 x 36 in.
+(() => {
+  function fitPoster() {
+    const poster = document.querySelector('.poster');
+    if (!poster) return;
+    const scale = Math.min(1, window.innerWidth / 4608);
+    document.documentElement.style.setProperty('--preview-scale', scale);
+    document.body.style.height = `${3456 * scale}px`;
+    const overflow = [...document.querySelectorAll('.panel, #figure-area')].filter(el =>
+      el.scrollHeight > el.clientHeight + 3 || el.scrollWidth > el.clientWidth + 3);
+    if (overflow.length) console.warn('Poster content exceeds these sections:', overflow.map(el => el.id));
+  }
+  window.addEventListener('resize', fitPoster);
+  window.addEventListener('load', fitPoster);
+  if (document.fonts) document.fonts.ready.then(fitPoster);
+  fitPoster();
+})();
+</script>

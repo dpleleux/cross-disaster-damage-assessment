@@ -1,0 +1,102 @@
+---
+pagetitle: "University of Houston Research Poster"
+format:
+  html:
+    theme: none
+    css: poster.css
+    embed-resources: true
+    html-math-method: mathml
+    toc: false
+    anchor-sections: false
+    section-divs: false
+    include-after-body: preview.html
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+<!-- Edit the text below. Keep the div IDs: poster.css uses them for placement. -->
+::: {.poster role="main" aria-label="Research poster"}
+
+::: {.poster-header}
+<img src="assets/uh-logo.png" class="uh-logo" alt="University of Houston">
+
+::: {.poster-title}
+[Insert Title]
+:::
+
+::: {.poster-authors}
+[Insert Authors]
+:::
+
+::: {.poster-affiliation}
+[Insert Department], University of Houston
+:::
+:::
+
+::: {#abstract .panel}
+## Abstract
+
+::: {.panel-body}
+Insert abstract here
+:::
+:::
+
+::: {#background .panel}
+## Background
+
+::: {.panel-body}
+Insert background here
+:::
+:::
+
+::: {#methods .panel}
+## Methods
+
+::: {.panel-body}
+Insert methods here
+
+<!-- Add Markdown, lists, tables, images, equations, or executable code cells here. -->
+:::
+:::
+
+::: {#figure-area}
+Insert figure here
+
+<!-- Replace this text with: ![Figure caption.](assets/your-figure.png){width=95%} -->
+:::
+
+::: {#results .panel}
+## Results
+
+::: {.panel-body}
+Insert results here
+:::
+:::
+
+::: {#conclusion .panel}
+## Conclusion
+
+::: {.panel-body}
+Insert conclusion here
+:::
+:::
+
+::: {#future-direction .panel}
+## Future Direction
+
+::: {.panel-body}
+Insert future direction here
+:::
+:::
+
+::: {#acknowledgments .panel}
+## Acknowledgments
+
+::: {.panel-body}
+Insert acknowledgements here
+:::
+:::
+
+:::

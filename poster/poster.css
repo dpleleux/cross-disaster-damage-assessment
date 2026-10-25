@@ -1,0 +1,69 @@
+/* UH source: 48 x 36 in. Coordinates below use the original poster's inches.
+   Fonts fall back to available system fonts. Do not resize the logo separately. */
+:root {
+  --uh-red: #c8102e;
+  --border-red: #c00000;
+  --body-size: 32pt;
+  --heading-size: 43pt;
+}
+@page { size: 48in 36in; margin: 0; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { color: #000; font-family: Calibri, Carlito, Arial, sans-serif; }
+main, #quarto-content, #quarto-document-content { margin: 0; padding: 0; max-width: none; }
+.poster {
+  position: relative;
+  width: 48in;
+  height: 36in;
+  background: linear-gradient(to bottom, #f2f2f2, #d6d9da);
+  font-size: var(--body-size);
+  line-height: 1.2;
+  break-inside: avoid;
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+.poster p { margin: 0 0 .18in; }
+.poster-header { position: absolute; inset: 0 0 auto; height: 6in; }
+.uh-logo { position: absolute; left: 1.649in; top: 2.435in; width: 6.385in; height: 1.333in; object-fit: contain; }
+.poster-title, .poster-authors, .poster-affiliation {
+  position: absolute; text-align: center;
+  font-family: "Century Gothic", "Avant Garde", Arial, sans-serif;
+}
+.poster-title { left: 9.286in; top: .775in; width: 30.643in; font-size: 72pt; font-weight: bold; line-height: 1.1; }
+.poster-authors { left: 9.286in; top: 2.25in; width: 30.643in; font-size: 60pt; font-weight: bold; }
+.poster-affiliation { left: 4.866in; top: 4.964in; width: 40.857in; font-size: 48pt; line-height: 1; }
+.panel { position: absolute; border: 1pt solid var(--border-red); }
+.panel h2 {
+  display: flex; align-items: center; justify-content: center;
+  margin: -1pt -1pt 0; padding: 0 .12in;
+  height: .825in; background: var(--uh-red); color: #fff;
+  font-family: Arial, sans-serif; font-weight: normal;
+  font-size: var(--heading-size); line-height: 1;
+  border: 0;
+}
+.panel-body { padding: .29in .195in .15in; }
+#abstract { left: 0; top: 6.083in; width: 16.212in; height: 14.447in; }
+#background { left: 0; top: 20.786in; width: 16.212in; height: 15.174in; }
+#methods { left: 16.744in; top: 6.067in; width: 15.354in; height: 19.069in; }
+#figure-area { position: absolute; left: 16.744in; top: 25.973in; width: 15.354in; height: 9.987in; padding: 0 .1in; }
+#results { left: 32.644in; top: 6.012in; width: 15.321in; height: 13.312in; }
+#conclusion { left: 32.644in; top: 19.603in; width: 15.281in; height: 5.533in; }
+#future-direction { left: 32.679in; top: 25.547in; width: 15.321in; height: 6.329in; }
+#acknowledgments { left: 32.613in; top: 32.25in; width: 15.369in; height: 3.711in; }
+.poster figure { margin: .2in 0; }
+.poster figure img, .poster .cell-output-display img { max-width: 100%; height: auto; }
+.poster figcaption { font-size: 25pt; margin-top: .12in; }
+.poster ul, .poster ol { margin: .15in 0 .2in; padding-left: .55in; }
+.poster table { width: 100%; border-collapse: collapse; font-size: inherit; }
+.poster th, .poster td { padding: .12in; border-bottom: 1pt solid #999; text-align: left; }
+.poster code, .poster pre { font-size: 25pt; white-space: pre-wrap; }
+.poster .small { font-size: 26pt; }
+.poster a { color: #9d0825; }
+@media screen {
+  body { background: #777; }
+  .poster { transform: scale(var(--preview-scale, 1)); transform-origin: top left; }
+}
+@media print {
+  html, body { width: 48in; height: 36in; background: white; }
+  .poster { transform: none !important; }
+}
