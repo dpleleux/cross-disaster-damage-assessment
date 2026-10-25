@@ -1,0 +1,64 @@
+/* UH styling for the Reveal.js deck. */
+:root { --uh-red: #c8102e; }
+body, .reveal-viewport, .reveal, .reveal .slide-background {
+  background: #fff;
+}
+.reveal {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  color: #202020;
+}
+.reveal .slides { text-align: left; }
+.reveal .slides section h1,
+.reveal .slides section h2,
+.reveal .slides section h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: none;
+  font-weight: 600;
+}
+.reveal .slides section h2 {
+  background: var(--uh-red);
+  color: #fff;
+  font-size: 1.5em;
+  line-height: 1.2;
+  padding: 0.25em 0.4em;
+  margin: 0 0 0.65em;
+  border: 0;
+}
+.reveal .slides section h3 { color: var(--uh-red); }
+.reveal #title-slide { text-align: center; }
+.reveal #title-slide h1 {
+  color: var(--uh-red);
+  font-size: 2.1em;
+  line-height: 1.1;
+  margin-bottom: 0.45em;
+}
+.reveal #title-slide .quarto-title-author-name { font-size: 1em; }
+.reveal .slide-logo {
+  display: block;
+  position: fixed;
+  right: 28px;
+  bottom: 22px;
+  /* !important: Quarto's footer.css loads later and sets height: 100%. */
+  width: 220px !important;
+  height: auto !important;
+  max-width: none !important;
+  max-height: none !important;
+}
+.reveal .footer { color: #333; font-size: 16px; bottom: 22px; }
+.reveal .slide-number {
+  left: 28px;
+  right: auto;
+  bottom: 22px;
+  background: transparent;
+  color: var(--uh-red);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+.reveal .progress { color: var(--uh-red); height: 4px; }
+.reveal .controls { color: var(--uh-red); bottom: 90px; }
+.reveal a { color: #b00e29; }
+.reveal a:hover { color: #82091e; }
+.reveal ul, .reveal ol { margin-top: 0.2em; }
+.reveal li { margin-bottom: 0.3em; }
+.reveal .slides section > p { line-height: 1.35; }

@@ -1,3 +1,7 @@
+> **Note:** These are the original template notes, kept for reference. In this repo,
+> `export_pdf.py` is replaced by `scripts/build.py`, `assets/` by `shared/`, and output
+> goes to `docs/poster/`. See the root `README.md` for the current workflow.
+
 # University of Houston poster in Quarto
 
 An editable Quarto adaptation of UH's 48 x 36-inch research poster:

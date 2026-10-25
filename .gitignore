@@ -1,0 +1,23 @@
+# Python
+.venv/
+__pycache__/
+*.py[co]
+
+# Quarto
+.quarto/
+*_files/
+/poster/*.html
+/poster/*.pdf
+/slides/*.html
+/slides/*.pdf
+
+# Node (DeckTape via npx)
+node_modules/
+
+# xBD imagery and labels: large and CC BY-NC-SA licensed; never commit
+/data/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini

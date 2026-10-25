@@ -1,0 +1,9 @@
+project:
+  title: "Cross-Disaster Building Damage Assessment (Poster)"
+  output-dir: ../docs/poster
+  render:
+    - poster.qmd
+
+format:
+  html:
+    output-file: index.html

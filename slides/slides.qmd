@@ -1,0 +1,58 @@
+---
+title: "Cross-Disaster Building Damage Assessment"
+author: "Muhammad Murtaza and Darrin Leleux"
+format:
+  revealjs:
+    theme: simple
+    css: uh-slides.css
+    width: 1280
+    height: 720
+    margin: 0.08
+    center: false
+    center-title-slide: true
+    slide-number: c/t
+    show-slide-number: all
+    transition: none
+    background-color: "#ffffff"
+    embed-resources: true
+    logo:
+      path: ../shared/uh-logo.png
+      alt: "University of Houston"
+    footer: "University of Houston"
+---
+
+## Introduction
+
+**Problem Statement:** Can a model trained on other disasters (earthquakes, wildfires, tornadoes) assess
+building damage in Houston after a flood, using few or no local labels?
+
+## Abstract
+
+Insert abstract here.
+
+## Background
+
+- **Need:** Rapid building damage assessment supports disaster response and recovery.
+- **Challenge:** Models trained on other disasters may struggle with Houston flooding because damage patterns and local conditions differ.
+- **Dataset:** xBD provides before-and-after satellite imagery with building outlines and damage labels.
+- **Research focus:** Test transfer to Houston floods with no local training labels, then measure the benefit of limited local labeling.
+
+## Methods
+
+Insert methods here.
+
+## Results
+
+Your findings here.
+
+## Conclusion
+
+Insert conclusion here.
+
+## Future Direction
+
+Insert future direction here.
+
+## Acknowledgments
+
+Insert acknowledgments here.

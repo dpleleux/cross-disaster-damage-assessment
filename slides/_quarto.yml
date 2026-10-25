@@ -1,0 +1,9 @@
+project:
+  title: "Cross-Disaster Building Damage Assessment (Slides)"
+  output-dir: ../docs/slides
+  render:
+    - slides.qmd
+
+format:
+  revealjs:
+    output-file: index.html

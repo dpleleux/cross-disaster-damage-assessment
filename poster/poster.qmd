@@ -1,5 +1,5 @@
 ---
-pagetitle: "University of Houston Research Poster"
+pagetitle: "Cross-Disaster Building Damage Assessment (Poster)"
 format:
   html:
     theme: none
@@ -20,18 +20,18 @@ execute:
 ::: {.poster role="main" aria-label="Research poster"}
 
 ::: {.poster-header}
-<img src="assets/uh-logo.png" class="uh-logo" alt="University of Houston">
+<img src="../shared/uh-logo.png" class="uh-logo" alt="University of Houston">
 
 ::: {.poster-title}
-[Insert Title]
+Cross-Disaster Building Damage Assessment
 :::
 
 ::: {.poster-authors}
-[Insert Authors]
+Muhammad Murtaza and Darrin Leleux
 :::
 
 ::: {.poster-affiliation}
-[Insert Department], University of Houston
+Engineering Data Science, University of Houston
 :::
 :::
 
@@ -39,7 +39,7 @@ execute:
 ## Abstract
 
 ::: {.panel-body}
-Insert abstract here
+Can a model trained on other disasters (earthquakes, wildfires, tornadoes) assess building damage in Houston after a flood, using few or no local labels?
 :::
 :::
 
@@ -64,7 +64,7 @@ Insert methods here
 ::: {#figure-area}
 Insert figure here
 
-<!-- Replace this text with: ![Figure caption.](assets/your-figure.png){width=95%} -->
+<!-- Replace this text with: ![Figure caption.](../shared/figures/your-figure.png){width=95%} -->
 :::
 
 ::: {#results .panel}
