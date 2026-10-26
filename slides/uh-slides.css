@@ -37,15 +37,19 @@ body, .reveal-viewport, .reveal, .reveal .slide-background {
 .reveal .slide-logo {
   display: block;
   position: fixed;
-  right: 28px;
-  bottom: 22px;
+  /* The logo sits outside the scaled slide, so size it like the slide:
+     220px on a 1280 x 720 deck, shrinking with min(vw/1280, vh/720). */
+  right: min(28px, 2.2vw, 3.9vh);
+  bottom: min(22px, 1.7vw, 3.1vh);
   /* !important: Quarto's footer.css loads later and sets height: 100%. */
-  width: 220px !important;
+  width: min(220px, 17.2vw, 30.6vh) !important;
   height: auto !important;
   max-width: none !important;
   max-height: none !important;
 }
-.reveal .footer { color: #333; font-size: 16px; bottom: 22px; }
+/* Shrinks on portrait phones so the text clears the logo.
+   !important: footer.css sets 14px below 800px wide. */
+.reveal .footer { color: #333; font-size: clamp(10px, 2.7vw, 16px) !important; bottom: 22px; }
 .reveal .slide-number {
   left: 28px;
   right: auto;

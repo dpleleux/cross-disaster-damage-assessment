@@ -530,15 +530,17 @@ margin-bottom: 0.45em;
 .reveal .slide-logo {
 display: block;
 position: fixed;
-right: 28px;
-bottom: 22px;
 
-width: 220px !important;
+right: min(28px, 2.2vw, 3.9vh);
+bottom: min(22px, 1.7vw, 3.1vh);
+
+width: min(220px, 17.2vw, 30.6vh) !important;
 height: auto !important;
 max-width: none !important;
 max-height: none !important;
 }
-.reveal .footer { color: #333; font-size: 16px; bottom: 22px; }
+
+.reveal .footer { color: #333; font-size: clamp(10px, 2.7vw, 16px) !important; bottom: 22px; }
 .reveal .slide-number {
 left: 28px;
 right: auto;
