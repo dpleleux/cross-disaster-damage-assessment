@@ -18,7 +18,7 @@ format:
     logo:
       path: ../shared/uh-logo.png
       alt: "University of Houston"
-    footer: "Engineering Data Science"
+    footer: "Engineering Data Science Department"
 ---
 
 ## Introduction
