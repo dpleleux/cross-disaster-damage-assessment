@@ -49,6 +49,6 @@ Source: https://hpedsi.uh.edu/partnerships/sponsored-events/data-science-showcas
 ## GitHub
 
 - Target remote: https://github.com/dpleleux/cross-disaster-damage-assessment
-  (not yet created/pushed as of 2026-10-25). GitHub Pages: branch `main`, folder `/docs`.
+  (remote `origin`, first pushed 2026-10-25; push as GitHub user `dpleleux`). GitHub Pages: branch `main`, folder `/docs`.
 - `gh` CLI is not installed; git uses Git Credential Manager for auth.
 - Commit only when asked.
