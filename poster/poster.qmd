@@ -39,7 +39,7 @@ Engineering Data Science, University of Houston
 ## Abstract
 
 ::: {.panel-body}
-Can a model trained on other disasters (earthquakes, wildfires, tornadoes) assess building damage in Houston after a flood, using few or no local labels?
+**Problem Statement:** Can a model trained on other disasters (earthquakes, wildfires, tornadoes) assess building damage in Houston after a flood, using few or no local labels?
 :::
 :::
 
