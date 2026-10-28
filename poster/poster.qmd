@@ -47,7 +47,10 @@ Can a model trained on other disasters (earthquakes, wildfires, tornadoes) asses
 ## Background
 
 ::: {.panel-body}
-Insert background here
+- **Need:** Rapid building damage assessment supports disaster response and recovery.
+- **Challenge:** Models trained on other disasters may struggle with Houston flooding because damage patterns and local conditions differ.
+- **Dataset:** xBD provides before-and-after satellite imagery with building outlines and damage labels.
+- **Research focus:** Test transfer to Houston floods with no local training labels, then measure the benefit of limited local labeling.
 :::
 :::
 
